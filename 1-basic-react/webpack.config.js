@@ -28,4 +28,8 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
   ],
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+  }
 };
