@@ -4,17 +4,15 @@ import Body from "./Body";
 import Footer from "./Footer";
 import Header from "./Header";
 
-
 export default class Layout extends React.Component {
-  render() { 
-    const title = "Welcome Bradley!"
-    const hobby = "Golf" 
+  constructor(){
+    super();
+  }
 
+  render() { 
     return (
       <div>
-        <Header 
-          hobby="Swimming"
-          title="General of Studies"
+        <Header
           />
         <Body />
         <Footer />
